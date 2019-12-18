@@ -1,7 +1,9 @@
-module.exports = (app) => {
-    app.get('/users/:userId', (req, res) => {
-        res.send({
-            "message": "Hello world"
-        });
-    });
+var Router = require('koa-router');
+module.exports = function(app) {
+	var router = new Router();
+	router.get('/user/:userid', function *() {
+		this.body = {
+			message: "Hello world"
+		};
+	});
 };
