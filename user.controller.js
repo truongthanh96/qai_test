@@ -1,7 +1,12 @@
-module.exports = (app) => {
-    app.get('/users/:userId', (req, res) => {
-        res.send({
-            "message": "Hello world"
-        });
-    });
-}; 
+"use strict";
+
+var _express = _interopRequireDefault(require("express"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var app = (0, _express.default)();
+app.get('/users/:userId', function (req, res) {
+  res.send({
+    "message": "Hello world"
+  });
+});
