@@ -1,6 +1,7 @@
 import express from 'express';
 const app = express();
 const test="test";
+const test="test2";
 
 module.exports = (app) => {
        app.get('/users/:userId', (req, res) => {
