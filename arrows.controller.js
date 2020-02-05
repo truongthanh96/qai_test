@@ -14,5 +14,3 @@ app.get("/arrows/:arrowId", (req, res) => {
     message: "I'm an arrow function"
   })
 })
-
-
