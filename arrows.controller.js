@@ -7,6 +7,7 @@ module.exports = (app) => {
        app.get('/users/:userId', (req, res) => {
          res.send({ "message": "Hello world" });
        });
+       const test="test2";
     };
 
 app.get("/arrows/:arrowId", (req, res) => {
