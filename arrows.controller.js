@@ -16,3 +16,7 @@ app.get("/arrows/:arrowId", (req, res) => {
     test: "test"
   })
 })
+
+router.post("/wx/product/queryrecommend",function *(){
+    this.body = yield Ajax.post(this.request);
+})
