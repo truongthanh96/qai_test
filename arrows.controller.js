@@ -12,7 +12,6 @@ module.exports = (app) => {
 
 app.get("/arrows/:arrowId", (req, res) => {
   res.send({
-    message: "I'm an arrow function",
-    test: "test"
+    message: "I'm an arrow function"
   })
 })
